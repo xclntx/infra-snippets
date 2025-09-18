@@ -1,19 +1,15 @@
-# Infra Snippets ⚙️  
+# Infra Snippets ⚙️
 
-A collection of Kubernetes, Rancher & Fleet examples and experiments.  
+Microservice demo with frontend + backend, TLS and autoscaling.  
 
-## 🧩 Topics
-- Helm chart configs  
-- Fleet GitRepo bundles  
-- Ingress & TLS examples  
-- Cert-manager usage  
+## Includes
+- **Backend** (port 8080) with ConfigMap injection  
+- **Frontend** (port 80) consuming backend  
+- **Ingress** with TLS (cert-manager ClusterIssuer)  
+- **Horizontal Pod Autoscaler** for backend  
 
-## 📂 Structure
-This repo will contain:  
-- `/helm/` – charts & values examples  
-- `/fleet/` – GitRepo bundles & experiments  
-- `/tls/` – ingress + cert-manager configs  
-
----
-
-🚀 More snippets coming soon – this is my personal infra toolbox.  
+## Usage
+```bash
+kubectl apply -f config/
+kubectl apply -f certs/
+kubectl apply -f k8s/
