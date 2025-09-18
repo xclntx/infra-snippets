@@ -1,6 +1,6 @@
 # Infra Snippets ⚙️  
 
-A small collection of Kubernetes, Rancher & Fleet examples and snippets I use or experiment with.  
+A collection of Kubernetes, Rancher & Fleet examples and experiments.  
 
 ## 🧩 Topics
 - Helm chart configs  
@@ -8,5 +8,12 @@ A small collection of Kubernetes, Rancher & Fleet examples and snippets I use or
 - Ingress & TLS examples  
 - Cert-manager usage  
 
-## 💡 Why?
-Just a place to keep small but useful infrastructure pieces. Might help others too.  
+## 📂 Structure
+This repo will contain:  
+- `/helm/` – charts & values examples  
+- `/fleet/` – GitRepo bundles & experiments  
+- `/tls/` – ingress + cert-manager configs  
+
+---
+
+🚀 More snippets coming soon – this is my personal infra toolbox.  
